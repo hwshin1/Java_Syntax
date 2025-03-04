@@ -2,23 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("안녕");
-        System.out.print("안녕");
-        System.out.print("안녕");
+        int x = 5; // 정수만 넣을 수 있는 x라는 이름의 변수에 5라는 값을 넣는다
+        int y = 10; // 정수만 넣을 수 있는 y라는 이름의 변수에 10이라는 값을 넣는다
 
-        // 출력
-        // 안녕안녕안녕
-
-        System.out.println(); // 이 코드는 System.out.print("\n"); 과 같다.
-
-        // 출력
-        // \n
-        // 추가설명 : 실제로 출력창에 \n 는 보이지 않고 줄바꿈으로 작동한다.
-
-        System.out.println("안녕\n안녕안녕");
-
-        // 출력
-        // 안녕
-        // 안녕안녕
+        System.out.println(x + y); // 출력: 15 , x와 y는 값으로 취급
     }
 }
