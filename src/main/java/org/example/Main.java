@@ -2,27 +2,71 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        // 증감연산
-        int i = 1;
-        System.out.println(i);
+        int age = 8;
+        System.out.println("당신의 나이 : " + age);
 
-        i = i + 1; // i의 값을 1 증가시킨다
-        System.out.println(i);
+        System.out.println("방법 1");
+        if (age <= 19 || age >= 60) {
+            System.out.println("할인 대상입니다.");
+        }
+        if (age > 19 && age < 60) {
+            System.out.println("할인 대상이 아닙니다.");
+        }
 
-        i += 1; // i의 값을 1 증가시킨다
-        System.out.println(i);
+        System.out.println("방법 2");
 
-        i++; // i의 값을 1 증가시킨다 <= 3개중에서 가장 많이 쓰는 증감연산
-        System.out.println(i);
+        if (age <= 19) {
+            System.out.println("할인 대상입니다.");
+        }
+        if (age >= 60) {
+            System.out.println("할인 대상입니다.");
+        }
+        if (age > 19 && age < 60) {
+            System.out.println("할인 대상이 아닙니다.");
+        }
 
-        i += 2; // i의 값을 2 증가시킨다
-        System.out.println(i);
+        System.out.println("방법 3");
 
-        System.out.println("===============");
+        if (age <= 19 || age >= 60) {
+            System.out.println("할인 대상입니다.");
+        } else if (age > 19 && age < 60) {
+            System.out.println("할인 대상이 아닙니다.");
+        }
 
-        int j = 100;
+        System.out.println("방법 4");
 
-        j -= 10; // j의 값을 10씩 감소시킨다
-        System.out.println(j);
+        if (age <= 19 || age >= 60) {
+            System.out.println("할인 대상입니다.");
+        } else {
+            System.out.println("할인 대상이 아닙니다.");
+        }
+
+        System.out.println("방법 5");
+
+        if (age <= 19) {
+            System.out.println("할인 대상입니다.");
+        } else if (age >= 60) {
+            System.out.println("할인 대상입니다.");
+        } else {
+            System.out.println("할인 대상이 아닙니다.");
+        }
+
+        System.out.println("방법 6");
+
+        if (age > 19 && age < 60) {
+            System.out.println("할인 대상이 아닙니다.");
+        } else {
+            System.out.println("할인 대상입니다.");
+        }
+
+        System.out.println("방법 7");
+
+        if (age <= 19 || age >= 60) {
+            System.out.println("할인 대상입니다.");
+        } else if (age > 19) {
+            if (age < 60) {
+                System.out.println("할인 대상이 아닙니다.");
+            }
+        }
     }
 }
