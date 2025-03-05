@@ -2,9 +2,15 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int x = 5; // 정수만 넣을 수 있는 x라는 이름의 변수에 5라는 값을 넣는다
-        int y = 10; // 정수만 넣을 수 있는 y라는 이름의 변수에 10이라는 값을 넣는다
+        int x = 10;
 
-        System.out.println(x + y); // 출력: 15 , x와 y는 값으로 취급
+        // 문장 + 숫자 => 숫자는 문장화 됨
+        System.out.println("x"); // x
+        System.out.println(x); // 10
+        System.out.println("x" + x); // x10
+        System.out.println("x : " + x); // x : 10
+        System.out.println("x : " + x * 10); // x : 100 곱셈 먼저
+        System.out.println("x : " + x + 10); // x :  1010
+        System.out.println("x : " + (x + 10)); // x : 20 소괄호 먼저
     }
 }
