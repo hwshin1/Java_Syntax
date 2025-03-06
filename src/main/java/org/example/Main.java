@@ -1,37 +1,16 @@
 package org.example;
 
-// 문제 : 2부터 9까지의 숫자를 사용하지 않고 구구단 출력을 완성 해주세요.
-// * 100까지 출력
+// 문제 : 1부터 5까지의 합을 출력해주세요.
 public class Main {
     public static void main(String[] args) {
-        int dan = 5;
-
+        int sum = 0; // 빈 상자 만들기 다른 값이 들어가면 그 값을 더해버려서 답이 바뀜
         int i = 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1; // i를 1씩 증가한다
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i);
-        i = i + 1;
-        System.out.println(dan + " * " + i + " = " + dan * i); // 이걸 100개를 추가를 하면 어디까지 출력이 되었는지 확인이 안되고 코드가 길어짐
 
-        System.out.println("===========================");
-        // while 문
-        int j = 1;
+        while (i <= 5) {
+            sum += i;
+            i++;
+        }
 
-        while (j <= 100) {
-            System.out.println(dan + " * " + j + " = " + dan * j);
-            j++;
-        } // 반복문을 쓰면 코드를 줄일수 있다.
+        System.out.println(sum);
     }
 }
