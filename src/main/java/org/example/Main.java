@@ -1,16 +1,20 @@
 package org.example;
 
-// 문제 : 1부터 5까지의 합을 출력해주세요.
 public class Main {
     public static void main(String[] args) {
-        int sum = 0; // 빈 상자 만들기 다른 값이 들어가면 그 값을 더해버려서 답이 바뀜
+        // while 문
+        System.out.println("==while 문==");
         int i = 1;
 
-        while (i <= 5) {
-            sum += i;
+        while (i <= 10) {
+            System.out.println(i);
             i++;
         }
 
-        System.out.println(sum);
+        // for 문
+        System.out.println("==for 문==");
+        for (int j = 1; j <= 10; j++) {
+            System.out.println(j);
+        }
     }
 }
