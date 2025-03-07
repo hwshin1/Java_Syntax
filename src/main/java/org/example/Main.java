@@ -2,19 +2,18 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        // while 문
-        System.out.println("==while 문==");
-        int i = 1;
+        //후위연산
+        int a = 1;
+        int i = a++; // a가 i에 대입을 먼저 한후 a에 1을 더한다
 
-        while (i <= 10) {
-            System.out.println(i);
-            i++;
-        }
+        System.out.println(a); // 2
+        System.out.println(i); // 2가 아니라 1이 나옴
 
-        // for 문
-        System.out.println("==for 문==");
-        for (int j = 1; j <= 10; j++) {
-            System.out.println(j);
-        }
+        //전위연산
+        int b = 1;
+        int j = ++b; // b에 1을 먼저 더한후 j에 대입을 한다
+
+        System.out.println(b); // 2
+        System.out.println(j); // 2 가 나옴
     }
 }
