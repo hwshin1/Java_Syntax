@@ -2,17 +2,25 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        double a = 2.1;
-        if ((a + a + a ) == 6.3) {
-            System.out.println("같음");
-        } else {
-            System.out.println("다름"); // 이게 실행된다.
-        }
-        // float와 double 타입 부동소수점 연산
-        // 다름이 나오는 이유 실수를 계산 할 때에는 정확도가 부정확 할 수 있다
-        /* 부동소수점 연산
-        넓은 범위의 수를 빠르게 정밀한 '근사치'로 계산하도록 되어있다.
-        따라서 정확한 결과가 필요할 때는 사용하면 안된다.
-        */
+        // 기본형 타입 변수
+        //논리
+        boolean b = true;
+
+        //문자
+        char c = 'a';
+
+        //정수
+        byte bt = 1;
+        short s = 2;
+        int i = 3;
+        long l = 4L;
+
+        // 실수
+        float f = 5.5f;
+        double d = 6.5;
+
+        // 기본형 변수 이외의 타입들은 참조형 타입의 변수라고 한다
+        // 참조형 변수는 실체가 없다 실체는 외부에 저장.
+        // 참조형 변수에는 실체를 조종 할 수 있는 리모컨이 저장된다.
     }
 }
