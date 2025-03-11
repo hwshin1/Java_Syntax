@@ -2,29 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        //논리
-        boolean b = false;
+        // 배열
+        int a = 10;
+        int[] arr; // 정수형 모양으로 만들어진 객체의 리모컨만 들어갈수 있는 arr 변수를 만든다
+        arr = new int[3]; //new 새로운 객체를 만든다
 
-        //문자
-        char c = 'b';
-
-        //정수
-        byte bt = 4;
-        short s = 8;
-        int i = 10;
-        long l = 5L;
-
-        // 실수
-        float f = 6.21f;
-        double d = 6.5415;
-
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(bt);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(l);
-        System.out.println(f);
-        System.out.println(d);
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        System.out.println(arr[1]); // 20 출력
     }
 }
