@@ -9,7 +9,7 @@ public class Main {
 }
 
 class 계산기 {
-    static void 합(int a, int b) {
+    public static void 합(int a, int b) {
         System.out.println(a + b);
     }
 
