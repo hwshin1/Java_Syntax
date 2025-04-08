@@ -1,23 +1,28 @@
 package org.example;
 
 public class Main {
+    static int a = 20;
+
     public static void main(String[] args) {
-        계산기.합(5, 3);
-        계산기.차(7, 4);
-        계산기.곱(2, 3);
+        System.out.println(a);
+
+        int a = 30;
+        System.out.println(a);
+
+        int result = 계산기.합(10, 20);
+
+        exam(result);
+    }
+
+    private static void exam(int a) {
+        System.out.println("a : " + a);
     }
 }
 
 class 계산기 {
-    public static void 합(int a, int b) {
+    public static int 합(int a, int b) {
         System.out.println(a + b);
-    }
 
-    public static void 차(int a, int b) {
-        System.out.println(a - b);
-    }
-
-    public static void 곱(int a, int b) {
-        System.out.println(a * b);
+        return a + b;
     }
 }
