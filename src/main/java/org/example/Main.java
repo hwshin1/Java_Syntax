@@ -1,28 +1,31 @@
 package org.example;
 
 public class Main {
-    static int a = 20;
-
     public static void main(String[] args) {
+        int a = 20 + Math.더하기(10, 20);
         System.out.println(a);
 
-        int a = 30;
-        System.out.println(a);
+        int 결과1 = Math.oneToSum(3);
+        System.out.println(결과1);
 
-        int result = 계산기.합(10, 20);
-
-        exam(result);
-    }
-
-    private static void exam(int a) {
-        System.out.println("a : " + a);
+        int 결과2 = Math.oneToSum(10);
+        System.out.println(결과2);
     }
 }
 
-class 계산기 {
-    public static int 합(int a, int b) {
-        System.out.println(a + b);
+class Math {
+    public static int 더하기(int a, int b) {
+        int c = a + b;
 
-        return a + b;
+        return c;
+    }
+
+    // 1부터 n까지의 합을 반환하는 함수
+    static int oneToSum(int b) {
+        int sum = 0;
+        for (int i = 1; i <= b; i++) {
+            sum = sum + i;
+        }
+        return sum;
     }
 }
