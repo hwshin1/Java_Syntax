@@ -2,30 +2,21 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 20 + Math.더하기(10, 20);
-        System.out.println(a);
+        int 결과1 = Math.nToMSum(2, 3);
+        System.out.println("결과1 : " + 결과1);
+        // 출력 : 결과1 : 5
 
-        int 결과1 = Math.oneToSum(3);
-        System.out.println(결과1);
-
-        int 결과2 = Math.oneToSum(10);
-        System.out.println(결과2);
+        int 결과2 = Math.nToMSum(5, 10);
+        System.out.println("결과2 : " + 결과2);
+        // 출력 : 결과2 : 45
     }
 }
 
 class Math {
-    public static int 더하기(int a, int b) {
-        int c = a + b;
+    // static을 써서 객체 생성을 안하고 바로 가져 올수 있다.
+    static int nToMSum(int n, int m) { // 매개변수를 넣어 값 가져오기
+        int sum = n + m;
 
-        return c;
-    }
-
-    // 1부터 n까지의 합을 반환하는 함수
-    static int oneToSum(int b) {
-        int sum = 0;
-        for (int i = 1; i <= b; i++) {
-            sum = sum + i;
-        }
-        return sum;
+        return sum; // 리턴으로 반환
     }
 }
