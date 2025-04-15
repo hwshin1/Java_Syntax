@@ -2,53 +2,17 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int rs = one_to_n_prime_numbers_count(10);
-        System.out.println("rs : " + rs);
-        // rs : 4
-        rs = one_to_n_prime_numbers_count(13);
-        System.out.println("rs : " + rs);
-        // rs :  6
-
-        rs = Math.n_to_m_prime_numbers_sum(5, 11);
-        System.out.println("5부터 11까지 소수 합 : " + rs);
-    }
-
-    static int one_to_n_prime_numbers_count(int n) {
-        int count = 0;
-        for (int i = 1; i <= n; i++) {
-            if (Math.isPrimeNumber(i)) {
-                System.out.println(i);
-                count++;
-            }
-        }
-        return count;
+        사람 a사람 = new 사람();
+        a사람.숨쉬다(); // 상속받은 숨쉬다 메서드 실행 가능
     }
 }
 
-class Math {
-    static int n_to_m_prime_numbers_sum(int n, int m) {
-        int sum = 0;
-        for (int i = n; i <= m; i++) {
-            if (Math.isPrimeNumber(i)) {
-                System.out.println(i);
-                sum += i;
-            }
-        }
-        return sum;
+class 사람 extends 동물 {
+    // 동물 클래스에서 상속 받기
+}
+
+class 동물 {
+    void 숨쉬다() {
+        System.out.println("숨을 쉼");
     }
-
-    static boolean isPrimeNumber(int num) {
-        if (num == 1) {
-            return false;
-        }
-
-        int sum = 0;
-        for (int i = 1; i <= num; i++) {
-            if (num % i == 0) { // i 는 num 의 약수 -> 약수 찾았다!
-                sum += i;
-            }
-        }
-
-        return sum == num + 1;
-    } // 소수 판별기
 }
