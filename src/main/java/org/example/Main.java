@@ -2,37 +2,27 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        오리 a오리 = new 오리();
-        a오리.날다();
+        // i 에는 오직 정수만 들어간다.
+        int i;
 
-        청둥오리 b오리 = new 청둥오리();
-        b오리.날다();
+        // `a무기` 에는 오직 무기리모콘만 들어간다.
+        // 다른말로 표현하면 `a무기` 라는 변수는 오직 무기랑만 연결될 수 있다.
+        // 다른말로 표현하면 `a무기` 라는 변수는 오직 무기 객!체!랑 연결될 수 있다.
+        무기 a무기 = new 칼();
 
-        흰오리 c오리 = new 흰오리();
-        c오리.날다();
-
-        고무오리 a고무오리 = new 고무오리();
-        a고무오리.날다();
+        // 힌트
+        // d에는 오직 실수 만 들어갈 수 있다.
+        // 5는 정수이다.
+        // d라는 변수는 자신안에 어떠한 값을 넣을 때 입국심사를 한다.
+        // d가 5에게 물어본다. "너는 실수인가?"
+        // 5는 실수가 아니지만 실수로 변할 수 있다.
+        // 5는 5.0이 되어서 5에 들어간다.
+        double d = 5;
     }
 }
 
-class 오리 {
-    void 날다() {
-        System.out.println("오리가 날개로 날아갑니다.");
-    }
+class 무기 {
 }
 
-class 청둥오리 extends 오리 {
-
-}
-
-class 흰오리 extends 오리 {
-
-}
-
-class 고무오리 extends 오리 {
-    @Override
-    void 날다() {
-        System.out.println("저는 날 수 없어요.");
-    }
+class 칼 extends 무기 {
 }
