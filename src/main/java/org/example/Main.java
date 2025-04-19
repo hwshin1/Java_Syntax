@@ -14,10 +14,11 @@ public class Main {
 }
 
 class 칼 {
-}
-
-class 활 extends 칼 {
+    // 활이 칼을 상속 받을 수 있게 칼 객체에 적어준다.
     void 쏘기() {
         System.out.println("활을 쏩니다.");
     }
+}
+
+class 활 extends 칼 {
 }
